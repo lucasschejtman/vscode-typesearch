@@ -9,14 +9,14 @@ Search and install Typescript definition files from your editor
 
 For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature search\]\(images/feature-search.png\)
-\!\[feature install\]\(images/feature-install.png\)
+![Open](./images/feature-open.png)
+![Search](./images/feature-search.png)
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+None
 
-## Extension Settings
+## Extension Settings (Not yet implemented)
 
 This extension contributes the following settings:
 
@@ -24,3 +24,5 @@ This extension contributes the following settings:
 * `typesearch.cacheTTL`: ``
 
 ## Release Notes
+
+See [Changelog](CHANGELOG.md)

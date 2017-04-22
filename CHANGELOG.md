@@ -1,7 +1,9 @@
 # Change Log
 
 ## [Unreleased]
-### Added
+
+## [0.2.1]
+- Improved readme
 
 ## [0.2.0]
 - Fixed publishing errors
