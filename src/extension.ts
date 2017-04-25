@@ -93,10 +93,21 @@ async function onCommandActivation(): Promise<void> {
     }
 }
 
+/**
+ * VSCode will call this function when the extension is selected
+ *
+ * @export
+ * @param {vscode.ExtensionContext} context
+ */
 export function activate(context: vscode.ExtensionContext) {
     cache = context.globalState;
     const searchTypeSearch = vscode.commands.registerCommand('extension.typesearch', onCommandActivation);
     context.subscriptions.push(searchTypeSearch);
 }
 
+/**
+ * VSCode will call this function when the extension is closed
+ *
+ * @export
+ */
 export function deactivate() { }
