@@ -84,6 +84,8 @@ function typeToQuickItem(types: RawTypeDefinition[]): QuickItem[] {
 
 async function onCommandActivation(): Promise<void> {
     try {
+        console.log(vscode.workspace.workspaceFolders);
+        console.log(vscode.window.activeTextEditor?.document.uri);
         const types = await fetchTypes(typesURL);
         const selected = await vscode.window.showQuickPick(typeToQuickItem(types), { placeHolder });
         const copyCmd = await onTypeSelected(selected);
